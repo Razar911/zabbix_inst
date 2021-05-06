@@ -28,4 +28,4 @@ jobs:
         #  systemctl enable zabbix-agent
         
       - name: Check zabbix-agent version
-        run: /usr/sbin/zabbix_agentd --V
+        run: /usr/sbin/zabbix_agentd -V
