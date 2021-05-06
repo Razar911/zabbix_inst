@@ -16,10 +16,10 @@ jobs:
         run: wget https://repo.zabbix.com/zabbix/4.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.0-2+bionic_all.deb
         
       - name: Append the repository
-        run: dpkg -i zabbix-release_4.0-2+bionic_all.deb
+        run: sudo dpkg -i zabbix-release_4.0-2+bionic_all.deb
         
       - name: Install zabbix-agent
-        run: apt install zabbix-agent
+        run: sudo apt install zabbix-agent
         
       - name: Check zabbix-agent version
         run: zabbix-agent --V
