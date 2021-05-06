@@ -21,5 +21,8 @@ jobs:
       - name: Install zabbix-agent
         run: sudo apt install zabbix-agent
         
+      - name: Enable zabbix-agent
+        run: systemctl enable zabbix-agent
+        
       - name: Check zabbix-agent version
         run: zabbix-agent --V
