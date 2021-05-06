@@ -3,7 +3,7 @@ name: zabbix_inst
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   install_zabbix-agent:
